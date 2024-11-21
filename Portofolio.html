@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Dzikri</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+      <div class="logo">
+          <h1>Dzikri Putra Gumilar</h1>
+      </div>
+      <nav>
+          <ul>
+              <li><strong><a href="#about">About</a></strong></li>
+              <li><strong><a href="#work">Project</a></strong></li>
+              <li><strong><a href="#contact">Contact</a></strong></li>
+            
+            </ul>
+          </ul>
+      </nav>
+  </header>
+
+  <!-- Pindahkan About ke atas -->
+  <section>
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2>About</h2>
+      </div>
+      <div class="row">
+        <!-- Kolom kiri untuk foto -->
+        <div class="col-lg-4">
+          <img
+            src="Media/IMG-20240908-WA0069.jpg"
+            class="img-fluid"
+            alt="Foto Profil"
+          />
+        </div>
+        <!-- Kolom kanan untuk informasi -->
+        <div class="col-lg-8 content">
+          <h3>Information Profile &amp; Contact</h3>
+          <div class="row">
+            <div class="col-lg-6">
+              <ul>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <strong>Website:</strong>
+                  <span><a href="">Coming Soon</a></span>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <strong>Phone:</strong>
+                  <span><a href="https://api.whatsapp.com/send?phone=6285765933007&text=">+6289531300561</a></span>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <strong>City:</strong> <span>Bandung, Indonesia</span>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <ul>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <strong>Age:</strong>
+                  <span><a href="https://sif.uin-suska.ac.id/" target="_blank">16</a></span>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <strong>Email:</strong>
+                  <span><a href="mailto:zikrigumilar08@gmail.com">zikrigumilar08@gmail.com</a></span>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <strong>Freelance:</strong> <span>Available</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <p>
+            Saya siswa jurusan Rekayasa Perangkat Lunak yang tengah
+            semangat belajar mendalami ilmu mengenai coding dan pengujian
+            perangkat lunak. Dalam proses pembelajaran ini, saya berkomitmen
+            untuk mengembangkan keterampilan yang akan membantu saya menjadi
+            ahli dalam menghasilkan solusi perangkat lunak yang dapat
+            diandalkan dan berkualitas.
+          </p>
+          <h3>Social Media</h3>
+          <div class="icon-social-media">
+                <a href="https://www.instagram.com/dzii.20/"><img src="Media/ig.jpg"></a>
+                <a href="https://discord.com/users/DziiGt#5279"><img src="Media/discord_logo.png"></a>
+                <a href="https://www.tiktok.com/@dziiptra"><img src="Media/tiktok-icon-free-png.png"></a>
+                <a href="https://open.spotify.com/user/3jhg6oj2a40bjx5j81wayc2pt?si=73613399d20946c6"><img src="Media/Spotify.png"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+  <section id="work">
+      <h2 class="title-project">Project</h2>
+      <div class="project-gallery">
+          <div class="project-card">
+            <img src="Media/WhatsApp Image 2024-11-21 at 01.19.39.jpeg" alt="Project Image">
+            <div class="card-info">
+                <h3>Shooter Game</h3>
+                <p>Permainan Shooter Biasa</p>
+            </div>
+         </div>
+         <div class="project-card">
+          <img src="Media/WhatsApp Image 2024-11-21 at 01.36.14.jpeg" alt="Project Image">
+          <div class="card-info">
+              <h3>Editor Photo</h3>
+              <p>Software Edit Foto Python</p>
+          </div>
+       </div>
+       <div class="project-card">
+        <img src="Media/WhatsApp Image 2024-11-21 at 01.42.05.jpeg" alt="Project Image">
+        <div class="card-info">
+            <h3>Chat Bot</h3>
+            <p>Bot yang bisa interaksi dengan user</p>
+        </div>
+     </div>
+     <div class="project-card">
+      <img src="project-image.jpg" alt="Project Image">
+      <div class="card-info">
+          <h3>Project Title</h3>
+          <p>Short description of the project.</p>
+      </div>
+   </div>
+      </div>
+  </section>
+
+  <section id="contact">
+      <h2>Contact</h2>
+      <form action="#" method="post">
+          <input type="email" placeholder="Your email" required><br>
+          <input type="text" placeholder="Subject" required><br>
+          <textarea placeholder="Your message" required></textarea><br>
+          <button type="submit">Send</button>
+      </form>
+  </section>
+
+  <footer>
+      <p>&copy; Dibuat Oleh Dzikri Dengan Sepenuh ❤</p>
+  </footer>
+
+  <script src="script.js">// script.js
+    document.addEventListener("DOMContentLoaded", function () {
+        const navLinks = document.querySelectorAll("nav ul li a");
+        
+        navLinks.forEach(link => {
+            link.addEventListener("click", function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute("href").substring(1);
+                document.getElementById(targetId).scrollIntoView({ behavior: "smooth" });
+            });
+        });
+    });
+      </script>
+</body>
+</html>
